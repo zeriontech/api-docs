@@ -11,7 +11,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [CovalentAsset](models.md#CovalentAsset) |  |
+| asset | [CovalentAsset](models.md#covalentasset) |  |
 | quantity | str |  |
 
 ## AddressInfo
@@ -29,7 +29,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [CovalentAsset](models.md#CovalentAsset) |  |
+| asset | [CovalentAsset](models.md#covalentasset) |  |
 | quantity | str |  |
 
 ## Asset
@@ -40,9 +40,9 @@
 | name | str |  |
 | symbol | str |  |
 | decimals | int |  |
-| type | [AssetType](models.md#AssetType) |  |
+| type | [AssetType](structures.md#gaspricesource) |  |
 | icon\_url | str | yes |
-| price | [Price](models.md#Price) | yes |
+| price | [Price](models.md#price) | yes |
 | is\_displayable | bool |  |
 | is\_verified | bool |  |
 
@@ -52,15 +52,15 @@
 | :--- | :--- | :--- |
 | id | str |  |
 | transaction\_hash | str |  |
-| type | [AssetActionType](models.md#AssetActionType) |  |
+| type | [AssetActionType](models.md#assetactiontype) |  |
 | value | float | yes |
 | quantity | str |  |
 | price | float | yes |
 | datetime | int |  |
-| asset | [Asset](models.md#Asset) |  |
-| status | [TransactionStatus](models.md#TransactionStatus) |  |
-| direction | [Direction](models.md#Direction) |  |
-| fee | [AssetActionFee](models.md#AssetActionFee) | yes |
+| asset | [Asset](models.md#asset) |  |
+| status | [TransactionStatus](models.md#transactionstatus) |  |
+| direction | [Direction](models.md#direction) |  |
+| fee | [AssetActionFee](models.md#assetactionfee) | yes |
 
 ## AssetActionAmount
 
@@ -80,7 +80,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | quantity | float |  |
 | share | float |  |
 | allocation | float |  |
@@ -96,9 +96,9 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | title | str |  |
-| stats | [AssetFullInfoStats](models.md#AssetFullInfoStats) |  |
+| stats | [AssetFullInfoStats](models.md#assetfullinfostats) |  |
 | components | str | yes |
 | gradient\_color | str | yes |
 | explore\_sections | int | yes |
@@ -110,7 +110,7 @@
 | circulating\_supply | float | yes |
 | relative\_changes | str | yes |
 | description | str | yes |
-| relevant\_resources | [AssetRelevantResource](models.md#AssetRelevantResource) | yes |
+| relevant\_resources | [AssetRelevantResource](models.md#assetrelevantresource) | yes |
 | tags | str | yes |
 | is\_tradable | bool |  |
 
@@ -127,7 +127,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | title | str |  |
 | gradient\_color | str | yes |
 | explore\_sections | int | yes |
@@ -180,16 +180,16 @@
 | title | str |  |
 | tagline | str |  |
 | order\_by | str | yes |
-| display\_type | [CategoryDisplayType](models.md#CategoryDisplayType) |  |
+| display\_type | [CategoryDisplayType](models.md#categorydisplaytype) |  |
 
 ## CompoundAction
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| type | [TransactionAction](models.md#TransactionAction) |  |
+| type | [TransactionAction](models.md#transactionaction) |  |
 | transaction\_hash | str |  |
-| status | [TransactionStatus](models.md#TransactionStatus) |  |
+| status | [TransactionStatus](models.md#transactionstatus) |  |
 | ctoken | str | yes |
 | ctoken\_value | float | yes |
 | underlying\_value | float | yes |
@@ -199,9 +199,9 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| underlying | [Asset](models.md#Asset) |  |
+| underlying | [Asset](models.md#asset) |  |
 | underlying\_eth\_price | float |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | borrow\_rate | float | yes |
 | supply\_rate | float | yes |
 | exchange\_rate | float | yes |
@@ -210,7 +210,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [CompoundAsset](models.md#CompoundAsset) |  |
+| asset | [CompoundAsset](models.md#compoundasset) |  |
 | deposited | float |  |
 | earned\_interest | float |  |
 | ctokens | int |  |
@@ -219,8 +219,8 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| loans | [CompoundLoan](models.md#CompoundLoan) | yes |
-| deposits | [CompoundDeposit](models.md#CompoundDeposit) | yes |
+| loans | [CompoundLoan](models.md#compoundloan) | yes |
+| deposits | [CompoundDeposit](models.md#compounddeposit) | yes |
 | total\_debt | float |  |
 | total\_collateral | float |  |
 
@@ -228,7 +228,7 @@
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [CompoundAsset](models.md#CompoundAsset) |  |
+| asset | [CompoundAsset](models.md#compoundasset) |  |
 | borrowed | float |  |
 | accrued\_interest | float |  |
 
@@ -248,7 +248,7 @@
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | deposited | float |  |
 | value | float |  |
 | supply\_rate | float | yes |
@@ -264,7 +264,7 @@
 | account\_number | str |  |
 | normalized\_balance | float |  |
 | balance | float |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 
 ## ExploreSection
 
@@ -284,7 +284,7 @@
 | fast | int | yes |
 | standard | int | yes |
 | slow | int | yes |
-| source | [GasPriceSource](models.md#GasPriceSource) |  |
+| source | [GasPriceSource](models.md#gaspricesource) |  |
 | datetime | datetime |  |
 
 ## Loan
@@ -292,7 +292,7 @@
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | borrowed | float |  |
 | value | float |  |
 | borrow\_rate | float | yes |
@@ -305,7 +305,7 @@
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | locked | float |  |
 | value | float |  |
 | section | str |  |
@@ -354,7 +354,7 @@
 | :--- | :--- | :--- |
 | id | str |  |
 | vault | int |  |
-| type | [MakerDSSActionType](models.md#MakerDSSActionType) |  |
+| type | [MakerDSSActionType](models.md#makerdssactiontype) |  |
 | transaction\_hash | str |  |
 | normalized\_debt\_change | float | yes |
 | debt\_change | float | yes |
@@ -399,7 +399,7 @@
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | staked | float |  |
 | value | float |  |
 | section | str |  |
@@ -421,28 +421,28 @@
 | Name | Type | Optional |
 | :--- | :--- | :--- |
 | id | str |  |
-| type | [RDBTransactionType](models.md#RDBTransactionType) |  |
+| type | [RDBTransactionType](models.md#rdbtransactiontype) |  |
 | protocol | str |  |
 | mined\_at | int |  |
 | block\_number | int |  |
-| status | [TransactionStatus](models.md#TransactionStatus) |  |
+| status | [TransactionStatus](models.md#transactionstatus) |  |
 | hash | str |  |
-| direction | [Direction](models.md#Direction) | yes |
+| direction | [Direction](models.md#direction) | yes |
 | address\_from | str | yes |
 | address\_to | str | yes |
 | contract | str | yes |
 | nonce | int | yes |
-| changes | [TransactionChange](models.md#TransactionChange) | yes |
-| fee | [TransactionFee](models.md#TransactionFee) | yes |
+| changes | [TransactionChange](models.md#transactionchange) | yes |
+| fee | [TransactionFee](models.md#transactionfee) | yes |
 | meta | str | yes |
 
 ## TransactionChange
 
 | Name | Type | Optional |
 | :--- | :--- | :--- |
-| asset | [Asset](models.md#Asset) |  |
+| asset | [Asset](models.md#asset) |  |
 | value | int |  |
-| direction | [Direction](models.md#Direction) |  |
+| direction | [Direction](models.md#direction) |  |
 | address\_from | str |  |
 | address\_to | str |  |
 | price | float | yes |
