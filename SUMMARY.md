@@ -16,18 +16,8 @@
   * [MakerHandler](untitled/makerhandler.md)
   * [Models](untitled/models.md)
   * [Structures](untitled/structures.md)
-* [Untitled](untitled-1.md)
 
-## fsdfsdf
+## Second Group
 
-* [README](fsdfsdf/untitled/README.md)
-  * [..](fsdfsdf/README.md)
-    * [README](fsdfsdf/readme.md)
-    * [SUMMARY](fsdfsdf/summary.md)
-    * [syntax](fsdfsdf/syntax/README.md)
-      * [code](fsdfsdf/syntax/code.md)
-      * [images](fsdfsdf/syntax/images.md)
-      * [links](fsdfsdf/syntax/links.md)
-      * [tables](fsdfsdf/syntax/tables.md)
-      * [titles](fsdfsdf/syntax/titles.md)
+* [DeFi SDK](second-group/defi-sdk.md)
 
