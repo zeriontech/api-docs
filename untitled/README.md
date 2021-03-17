@@ -1,0 +1,75 @@
+# Overview
+
+#### This is a socket-based interactive api based on the [Socket.io](https://socket.io) library.
+
+## Overview
+
+In order to connect, a valid `api_token` query parameter must be specified.All tokens are restricted by Origin and therefore a valid `HTTP_ORIGIN` header is expected.
+
+```javascript
+let io_options = {transports: ['websocket'], query: {api_token: 'YOUR API TOKEN'}};
+socket = io('wss://api.zerion.io', io_options);
+```
+
+### Actions
+
+There are three supported types of messages:
+
+* `get` - requests data, returns a single response and does not emit continuous messages
+* `subscribe` - returns a single response \(the same as `get`\) + creates a subscription
+* `unsubscribe` - deletes the subscription
+
+### Request
+
+Each request has the following structure:
+
+```text
+[
+    "{action}",
+    {
+      "scope": ["scope1", "scope2"],
+      "payload": {
+          "parameter1": "value1",
+          "parameter2": "value2"
+      }
+    }
+]
+```
+
+### Response
+
+```text
+[
+    "received {namespace} {model}",
+    {
+       "meta": {
+           "status": "ok",
+           "request parameter1": "value1",
+           "request parameter2": "value2"
+       },
+       "payload": {
+           "{scope}": "__result__"
+       }
+    }
+]
+```
+
+### Change
+
+```text
+[
+    "changed|appended|removed {namespace} {model}",
+    {
+       "meta": {
+           "subscription parameter1": "value1",
+           "subscription parameter2": "value2"
+       },
+       "payload": {
+           // changed model
+       }
+    }
+]
+```
+
+## Handlers
+
