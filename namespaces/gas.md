@@ -13,7 +13,9 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[GasPriceInfo](#gaspriceinfo)```
+```
+[GasPriceInfo](#gaspriceinfo)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

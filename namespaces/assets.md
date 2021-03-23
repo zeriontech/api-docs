@@ -19,7 +19,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, [Asset](#asset)]```
+```
+Dict[str, [Asset](#asset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -43,7 +45,9 @@ Default: []
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[ExploreSection](#exploresection)]```
+```
+List[[ExploreSection](#exploresection)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -85,7 +89,9 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[AssetInfo](#assetinfo)]```
+```
+List[[AssetInfo](#assetinfo)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -109,7 +115,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Optional[zerion_api.entities.socketio.AssetFullInfo]```
+```
+Optional[zerion_api.entities.socketio.AssetFullInfo]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -136,7 +144,9 @@ Default: d
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, List[Tuple[int, float]]]```
+```
+Dict[str, List[Tuple[int, float]]]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -157,7 +167,9 @@ Default: all
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[AssetTag](#assettag)]```
+```
+List[[AssetTag](#assettag)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -184,7 +196,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[AssetAction](#assetaction)]```
+```
+List[[AssetAction](#assetaction)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -214,7 +228,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[AssetStats](#assetstats)```
+```
+[AssetStats](#assetstats)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -241,7 +257,9 @@ Default: {}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[AssetInfo](#assetinfo)]```
+```
+List[[AssetInfo](#assetinfo)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -262,7 +280,9 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[Tokenlist](#tokenlist)]```
+```
+List[[Tokenlist](#tokenlist)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -280,7 +300,9 @@ Successful result.
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[Category](#category)]```
+```
+List[[Category](#category)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

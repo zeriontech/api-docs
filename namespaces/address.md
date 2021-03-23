@@ -16,7 +16,9 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[AddressInfo](#addressinfo)```
+```
+[AddressInfo](#addressinfo)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -46,7 +48,9 @@ Default: []
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, [AddressAsset](#addressasset)]```
+```
+Dict[str, [AddressAsset](#addressasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -76,7 +80,9 @@ Default: assets
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[Portfolio](#portfolio)```
+```
+[Portfolio](#portfolio)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -112,7 +118,9 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[Transaction](#transaction)]```
+```
+List[[Transaction](#transaction)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -148,7 +156,9 @@ Default: 100
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, List[Tuple[int, float]]]```
+```
+Dict[str, List[Tuple[int, float]]]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -175,7 +185,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[Deposit](#deposit)]```
+```
+List[[Deposit](#deposit)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -202,7 +214,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[Loan](#loan)]```
+```
+List[[Loan](#loan)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -229,7 +243,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[LockedAsset](#lockedasset)]```
+```
+List[[LockedAsset](#lockedasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -256,7 +272,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[StakedAsset](#stakedasset)]```
+```
+List[[StakedAsset](#stakedasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -283,7 +301,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, [AddressBSCAsset](#addressbscasset)]```
+```
+Dict[str, [AddressBSCAsset](#addressbscasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -310,7 +330,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```Dict[str, [AddressPolygonAsset](#addresspolygonasset)]```
+```
+Dict[str, [AddressPolygonAsset](#addresspolygonasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

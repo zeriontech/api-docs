@@ -19,7 +19,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[CompoundInfo](#compoundinfo)```
+```
+[CompoundInfo](#compoundinfo)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -40,7 +42,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[CompoundAsset](#compoundasset)]```
+```
+List[[CompoundAsset](#compoundasset)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -64,7 +68,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[CompoundAction](#compoundaction)]```
+```
+List[[CompoundAction](#compoundaction)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -88,7 +94,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[CompoundDeposit](#compounddeposit)]```
+```
+List[[CompoundDeposit](#compounddeposit)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -112,7 +120,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[CompoundLoan](#compoundloan)]```
+```
+List[[CompoundLoan](#compoundloan)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}

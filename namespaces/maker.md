@@ -19,7 +19,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[MakerCDP](#makercdp)```
+```
+[MakerCDP](#makercdp)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -43,7 +45,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```[MakerVault](#makervault)```
+```
+[MakerVault](#makervault)
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -67,7 +71,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[MakerCDPAction](#makercdpaction)]```
+```
+List[[MakerCDPAction](#makercdpaction)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -91,7 +97,9 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-```List[[MakerVaultAction](#makervaultaction)]```
+```
+List[[MakerVaultAction](#makervaultaction)]
+```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
