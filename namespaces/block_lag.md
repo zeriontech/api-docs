@@ -9,7 +9,7 @@ Here you can find all the scopes available in this particular namespace.
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}

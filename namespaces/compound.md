@@ -15,7 +15,7 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
@@ -35,7 +35,7 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
@@ -58,7 +58,7 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
@@ -81,7 +81,7 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
@@ -104,7 +104,7 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-{% api-method-response-example %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
