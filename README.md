@@ -1,19 +1,8 @@
-# Zerion backend API
+# Welcome
 
 #### This is a socket-based interactive api based on the [Socket.io](https://socket.io) library.
 
-## Installation
 
-{% hint style="warning" %}
-Please, make sure to use [Socket.io v2 client API](https://socket.io/docs/v2/client-api/). 
-{% endhint %}
-
-```text
-// Javascript
-npm i socket.io-client@2.4.0
-// Python
-pip install python-socketio==4.6.1
-```
 
 ### Example client code 
 
@@ -91,18 +80,27 @@ URI = "wss://api-v4.zerion.io"
 API_TOKEN = "Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy"
 ORIGIN = "http://localhost:3000"
 sio = socketio.AsyncClient()
+
 @sio.event
-def connect():
+async def connect():
   print("I'm connected!")
-  
+
 @sio.event
 def connect_error():
   print("The connection failed!")
-async def sio_connect():
-  await sio.connect(f"{URI}/?api_token={API_TOKEN}", headers={"Origin": ORIGIN})
-if name == '__main__':
-  loop = asyncio.get_event_loop()
-  loop.create_task(sio_connect())
+
+@sio.event
+async def my_message(data):
+    print('message received with ', data)
+    await sio.emit('my response', {'response': 'my response'})
+
+async def main():
+    await sio.connect(f"{URI}/?api_token={API_TOKEN}", headers={"Origin": ORIGIN})
+    await sio.wait()
+
+if __name__ == '__main__':
+    asyncio.run(main())
+
 ```
 {% endtab %}
 {% endtabs %}

@@ -1,23 +1,24 @@
 # Table of contents
 
-* [Zerion backend API](README.md)
+* [Welcome](README.md)
+* [Getting Started](getting-started/README.md)
+  * [Installation](getting-started/installation.md)
+* [Overview](overview-1.md)
 
-## Reference
+## Full Reference <a id="reference"></a>
 
----
+* [Handlers](reference/overview/README.md)
+  * [AddressHandler](reference/overview/addresshandler.md)
+  * [AssetsHandler](reference/overview/assetshandler.md)
+  * [BlockLagHandler](reference/overview/blocklaghandler.md)
+  * [CompoundHandler](reference/overview/compoundhandler.md)
+  * [DyDxHandler](reference/overview/dydxhandler.md)
+  * [GasPriceHandler](reference/overview/gaspricehandler.md)
+  * [MakerHandler](reference/overview/makerhandler.md)
+* [Structures](reference/structures.md)
+* [Models](reference/models.md)
 
-* [aaaa Overview](overview/README.md)
-  * [AddressHandler](overview/addresshandler.md)
-  * [AssetsHandler](overview/assetshandler.md)
-  * [BlockLagHandler](overview/blocklaghandler.md)
-  * [CompoundHandler](overview/compoundhandler.md)
-  * [DyDxHandler](overview/dydxhandler.md)
-  * [GasPriceHandler](overview/gaspricehandler.md)
-  * [MakerHandler](overview/makerhandler.md)
-  * [Models](overview/models.md)
-  * [Structures](overview/structures.md)
-
-## Second Group
+## DeFi SDK <a id="second-group"></a>
 
 * [DeFi SDK](second-group/defi-sdk.md)
 
