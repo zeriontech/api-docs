@@ -1,7 +1,7 @@
 # (/dydx)
 ## Scopes 
 Here you can find all the scopes available in this particular namespace. 
-{% api-method method="WEBSOCKET" host="" path="/dydx" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/dydx" %}
 {% api-method-summary %} deposits {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
@@ -15,11 +15,16 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response %}
+{% api-method-response-example %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response-example %}
+{% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WEBSOCKET" host="" path="/dydx" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/dydx" %}
 {% api-method-summary %} loans {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
@@ -33,7 +38,12 @@ Default: usd
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
-List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response %}
+{% api-method-response-example %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response-example %}
+{% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
