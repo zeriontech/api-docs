@@ -16,7 +16,8 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-[AddressInfo](#addressinfo){% endapi-method-response-example %}
+```[AddressInfo](#addressinfo)```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -45,7 +46,8 @@ Default: []
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-Dict[str, [AddressAsset](#addressasset)]{% endapi-method-response-example %}
+```Dict[str, [AddressAsset](#addressasset)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -74,7 +76,8 @@ Default: assets
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-[Portfolio](#portfolio){% endapi-method-response-example %}
+```[Portfolio](#portfolio)```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -109,7 +112,8 @@ Default: -
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[Transaction](#transaction)]{% endapi-method-response-example %}
+```List[[Transaction](#transaction)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -144,7 +148,8 @@ Default: 100
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-Dict[str, List[Tuple[int, float]]]{% endapi-method-response-example %}
+```Dict[str, List[Tuple[int, float]]]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -170,7 +175,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[Deposit](#deposit)]{% endapi-method-response-example %}
+```List[[Deposit](#deposit)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -196,7 +202,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[Loan](#loan)]{% endapi-method-response-example %}
+```List[[Loan](#loan)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -222,7 +229,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[LockedAsset](#lockedasset)]{% endapi-method-response-example %}
+```List[[LockedAsset](#lockedasset)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -248,7 +256,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[StakedAsset](#stakedasset)]{% endapi-method-response-example %}
+```List[[StakedAsset](#stakedasset)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -274,7 +283,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-Dict[str, [AddressBSCAsset](#addressbscasset)]{% endapi-method-response-example %}
+```Dict[str, [AddressBSCAsset](#addressbscasset)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -300,7 +310,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-Dict[str, [AddressPolygonAsset](#addresspolygonasset)]{% endapi-method-response-example %}
+```Dict[str, [AddressPolygonAsset](#addresspolygonasset)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}

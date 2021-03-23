@@ -19,7 +19,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response-example %}
+```List[[DyDxAccountBalance](#dydxaccountbalance)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -42,7 +43,8 @@ Default: usd
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
-List[[DyDxAccountBalance](#dydxaccountbalance)]{% endapi-method-response-example %}
+```List[[DyDxAccountBalance](#dydxaccountbalance)]```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
