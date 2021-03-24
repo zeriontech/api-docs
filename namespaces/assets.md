@@ -1,18 +1,18 @@
 # (/assets)
 ## Scopes 
 Here you can find all the scopes available in this particular namespace. 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} prices {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -27,18 +27,18 @@ Dict[str, [Asset](#asset)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} explore-sections {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="explore_sections" type="list" %}
 Default: []
 {% endapi-method-parameter %}
 {% api-method-parameter name="explore_sections_aliases" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -53,15 +53,15 @@ List[[ExploreSection](#exploresection)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="limit" type="int" %}
@@ -82,7 +82,7 @@ Default: -
 {% api-method-parameter name="search_query" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -97,18 +97,18 @@ List[[AssetInfo](#assetinfo)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} full-info {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_code" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -123,21 +123,21 @@ Optional[zerion_api.entities.socketio.AssetFullInfo]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} charts {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="charts_type" type="str" %}
 Default: d
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -152,15 +152,15 @@ Dict[str, List[Tuple[int, float]]]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} tags {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="tags_group" type="str" %}
 Default: all
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -175,21 +175,21 @@ List[[AssetTag](#assettag)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} actions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="asset_code" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -204,11 +204,11 @@ List[[AssetAction](#assetaction)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} stats {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -218,10 +218,10 @@ Default: []
 {% api-method-parameter name="asset_code" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -236,21 +236,21 @@ Successful result.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} list {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="order_by" type="dict" %}
 Default: {}
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -265,15 +265,15 @@ List[[AssetInfo](#assetinfo)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} tokenlists {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="asset_code" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -288,12 +288,12 @@ List[[Tokenlist](#tokenlist)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/assets" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} categories {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
-{% endapi-method-query-parameters %}
+{% api-method-payload-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}

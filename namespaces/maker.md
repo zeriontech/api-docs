@@ -1,18 +1,18 @@
 # (/maker)
 ## Scopes 
 Here you can find all the scopes available in this particular namespace. 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/maker" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
 {% api-method-summary %} cdp {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="cdp_id" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -27,18 +27,18 @@ Successful result.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/maker" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
 {% api-method-summary %} vault {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="vault_id" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -53,18 +53,18 @@ Successful result.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/maker" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
 {% api-method-summary %} cdp-actions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="cdp_id" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -79,18 +79,18 @@ List[[MakerCDPAction](#makercdpaction)]
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="/maker" %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
 {% api-method-summary %} vault-actions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-query-parameters %}
+{% api-method-payload-parameters %}
 {% api-method-parameter name="vault_id" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% api-method-parameter name="currency" type="[PriceCurrency](#pricecurrency)" %}
+{% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endapi-method-payload-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
