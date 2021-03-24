@@ -5,11 +5,11 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -17,7 +17,22 @@ Default: -
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-[AddressInfo](#addressinfo)
+
+        [
+            "received address info",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "info": "AddressInfo"
+                }
+            }
+        ]
+
+        AddressInfo
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -28,7 +43,7 @@ Successful result.
 {% api-method-summary %} assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -41,7 +56,7 @@ Default: usd
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -49,7 +64,22 @@ Default: []
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-Dict[str, [AddressAsset](#addressasset)]
+
+        [
+            "received address assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "assets": "Dict[str, AddressAsset]"
+                }
+            }
+        ]
+
+        Dict[str, AddressAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -60,7 +90,7 @@ Dict[str, [AddressAsset](#addressasset)]
 {% api-method-summary %} portfolio {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -73,7 +103,7 @@ Default: usd
 {% api-method-parameter name="portfolio_fields" type="PortfolioFields" %}
 Default: assets
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -81,7 +111,22 @@ Default: assets
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-[Portfolio](#portfolio)
+
+        [
+            "received address portfolio",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "portfolio": "Portfolio"
+                }
+            }
+        ]
+
+        Portfolio
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -92,7 +137,7 @@ Successful result.
 {% api-method-summary %} transactions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -111,7 +156,7 @@ Default: 0
 {% api-method-parameter name="transactions_search_query" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -119,7 +164,22 @@ Default: -
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[Transaction](#transaction)]
+
+        [
+            "received address transactions",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "transactions": "List[Transaction]"
+                }
+            }
+        ]
+
+        List[Transaction]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -130,7 +190,7 @@ List[[Transaction](#transaction)]
 {% api-method-summary %} charts {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -149,7 +209,7 @@ Default: 0
 {% api-method-parameter name="charts_min_percentage" type="int" %}
 Default: 100
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -157,7 +217,22 @@ Default: 100
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-Dict[str, List[Tuple[int, float]]]
+
+        [
+            "received address charts",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "charts": "Dict[str, List[Tuple[int, float]]]"
+                }
+            }
+        ]
+
+        Dict[str, List[Tuple[int, float]]]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -168,7 +243,7 @@ Dict[str, List[Tuple[int, float]]]
 {% api-method-summary %} deposits {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -178,7 +253,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -186,7 +261,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[Deposit](#deposit)]
+
+        [
+            "received address deposits",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "deposits": "List[Deposit]"
+                }
+            }
+        ]
+
+        List[Deposit]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -197,7 +287,7 @@ List[[Deposit](#deposit)]
 {% api-method-summary %} loans {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -207,7 +297,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -215,7 +305,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[Loan](#loan)]
+
+        [
+            "received address loans",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "loans": "List[Loan]"
+                }
+            }
+        ]
+
+        List[Loan]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -226,7 +331,7 @@ List[[Loan](#loan)]
 {% api-method-summary %} locked-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -236,7 +341,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -244,7 +349,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[LockedAsset](#lockedasset)]
+
+        [
+            "received address locked-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "locked-assets": "List[LockedAsset]"
+                }
+            }
+        ]
+
+        List[LockedAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -255,7 +375,7 @@ List[[LockedAsset](#lockedasset)]
 {% api-method-summary %} staked-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -265,7 +385,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -273,7 +393,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[StakedAsset](#stakedasset)]
+
+        [
+            "received address staked-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "staked-assets": "List[StakedAsset]"
+                }
+            }
+        ]
+
+        List[StakedAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -284,7 +419,7 @@ List[[StakedAsset](#stakedasset)]
 {% api-method-summary %} bsc-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -294,7 +429,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -302,7 +437,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-Dict[str, [AddressBSCAsset](#addressbscasset)]
+
+        [
+            "received address bsc-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "bsc-assets": "Dict[str, AddressBSCAsset]"
+                }
+            }
+        ]
+
+        Dict[str, AddressBSCAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -313,7 +463,7 @@ Dict[str, [AddressBSCAsset](#addressbscasset)]
 {% api-method-summary %} polygon-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
@@ -323,7 +473,7 @@ Default: []
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -331,7 +481,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-Dict[str, [AddressPolygonAsset](#addresspolygonasset)]
+
+        [
+            "received address polygon-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "polygon-assets": "Dict[str, AddressPolygonAsset]"
+                }
+            }
+        ]
+
+        Dict[str, AddressPolygonAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

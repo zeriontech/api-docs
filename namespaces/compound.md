@@ -5,14 +5,14 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -20,7 +20,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-[CompoundInfo](#compoundinfo)
+
+        [
+            "received compound info",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "info": "CompoundInfo"
+                }
+            }
+        ]
+
+        CompoundInfo
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -31,11 +46,11 @@ Successful result.
 {% api-method-summary %} assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -43,7 +58,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[CompoundAsset](#compoundasset)]
+
+        [
+            "received compound assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "assets": "List[CompoundAsset]"
+                }
+            }
+        ]
+
+        List[CompoundAsset]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -54,14 +84,14 @@ List[[CompoundAsset](#compoundasset)]
 {% api-method-summary %} actions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -69,7 +99,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[CompoundAction](#compoundaction)]
+
+        [
+            "received compound actions",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "actions": "List[CompoundAction]"
+                }
+            }
+        ]
+
+        List[CompoundAction]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -80,14 +125,14 @@ List[[CompoundAction](#compoundaction)]
 {% api-method-summary %} deposits {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -95,7 +140,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[CompoundDeposit](#compounddeposit)]
+
+        [
+            "received compound deposits",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "deposits": "List[CompoundDeposit]"
+                }
+            }
+        ]
+
+        List[CompoundDeposit]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -106,14 +166,14 @@ List[[CompoundDeposit](#compounddeposit)]
 {% api-method-summary %} loans {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
+{% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="PriceCurrency" %}
 Default: usd
 {% endapi-method-parameter %}
-{% endapi-method-payload-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -121,7 +181,22 @@ Default: usd
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-List[[CompoundLoan](#compoundloan)]
+
+        [
+            "received compound loans",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "loans": "List[CompoundLoan]"
+                }
+            }
+        ]
+
+        List[CompoundLoan]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

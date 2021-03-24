@@ -5,8 +5,8 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} block-lag {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-payload-parameters %}
-{% endapi-method-payload-parameters %}
+{% api-method-body-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -14,7 +14,22 @@ Here you can find all the scopes available in this particular namespace.
 Successful result.
 {% endapi-method-response-example-description %}
 ```
-[BlockLag](#blocklag)
+
+        [
+            "received block_lag block-lag",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "block-lag": "BlockLag"
+                }
+            }
+        ]
+
+        BlockLag
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
