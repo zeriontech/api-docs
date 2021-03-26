@@ -1,4 +1,4 @@
-# Installation
+# Install
 
 {% hint style="warning" %}
 Please, make sure to use [Socket.io v2 client API](https://socket.io/docs/v2/client-api/). 

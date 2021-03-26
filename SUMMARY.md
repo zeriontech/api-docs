@@ -1,32 +1,32 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Getting Started](getting-started/README.md)
-  * [Installation](getting-started/installation.md)
+* [Quick Start](getting-started/README.md)
+  * [Install](getting-started/installation.md)
 * [Overview](overview-1.md)
 * [Namespaces](namespaces/README.md)
   * [/address](namespaces/address.md)
   * [/assets](namespaces/assets.md)
-  * [/block_lag](namespaces/block_lag.md)
+  * [/block\_lag](namespaces/block_lag.md)
   * [/compound](namespaces/compound.md)
   * [/dydx](namespaces/dydx.md)
   * [/gas](namespaces/gas.md)
   * [/maker](namespaces/maker.md)
 
-## Full Reference <a id="reference"></a>
+## Websocket API <a id="websockets"></a>
 
-* [Handlers](reference/overview/README.md)
-  * [AddressHandler](reference/overview/addresshandler.md)
-  * [AssetsHandler](reference/overview/assetshandler.md)
-  * [BlockLagHandler](reference/overview/blocklaghandler.md)
-  * [CompoundHandler](reference/overview/compoundhandler.md)
-  * [DyDxHandler](reference/overview/dydxhandler.md)
-  * [GasPriceHandler](reference/overview/gaspricehandler.md)
-  * [MakerHandler](reference/overview/makerhandler.md)
-* [Structures](reference/structures.md)
-* [Models](reference/models.md)
-
+* [Handlers](websockets/overview/README.md)
+  * [AddressHandler](websockets/overview/addresshandler.md)
+  * [AssetsHandler](websockets/overview/assetshandler.md)
+  * [BlockLagHandler](websockets/overview/blocklaghandler.md)
+  * [CompoundHandler](websockets/overview/compoundhandler.md)
+  * [DyDxHandler](websockets/overview/dydxhandler.md)
+  * [GasPriceHandler](websockets/overview/gaspricehandler.md)
+  * [MakerHandler](websockets/overview/makerhandler.md)
+* [Structures](websockets/structures.md)
+* [Models](websockets/models.md)
 
 ## DeFi SDK <a id="second-group"></a>
 
 * [DeFi SDK](second-group/defi-sdk.md)
+
