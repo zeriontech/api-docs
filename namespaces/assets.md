@@ -5,21 +5,20 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} prices {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["prices"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["prices"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -63,21 +62,20 @@ Successful result.
 {% api-method-summary %} explore-sections {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["explore-sections"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["explore-sections"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -120,21 +118,20 @@ Successful result.
 {% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["info"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["info"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -196,21 +193,20 @@ Successful result.
 {% api-method-summary %} full-info {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["full-info"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["full-info"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -254,21 +250,20 @@ Successful result.
 {% api-method-summary %} charts {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["charts"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["charts"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -315,21 +310,20 @@ Successful result.
 {% api-method-summary %} tags {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["tags"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["tags"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -369,21 +363,20 @@ Successful result.
 {% api-method-summary %} actions {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["actions"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["actions"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -430,21 +423,20 @@ Successful result.
 {% api-method-summary %} stats {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["stats"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["stats"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -494,21 +486,20 @@ Successful result.
 {% api-method-summary %} list {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["list"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["list"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -555,21 +546,20 @@ Successful result.
 {% api-method-summary %} tokenlists {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["tokenlists"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["tokenlists"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -609,21 +599,20 @@ Successful result.
 {% api-method-summary %} categories {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["categories"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["categories"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}

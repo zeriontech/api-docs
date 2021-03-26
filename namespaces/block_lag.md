@@ -5,21 +5,20 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} block-lag {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["block-lag"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["block-lag"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}

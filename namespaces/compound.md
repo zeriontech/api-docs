@@ -5,21 +5,20 @@ Here you can find all the scopes available in this particular namespace.
 {% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["info"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["info"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -63,21 +62,20 @@ Successful result.
 {% api-method-summary %} assets {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["assets"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["assets"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -118,21 +116,20 @@ Successful result.
 {% api-method-summary %} actions {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["actions"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["actions"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -176,21 +173,20 @@ Successful result.
 {% api-method-summary %} deposits {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["deposits"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["deposits"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -234,21 +230,20 @@ Successful result.
 {% api-method-summary %} loans {% endapi-method-summary %}
 {% api-method-description %}
 Example request
-
-        ```[
-            [
-                "get",
-                {
-                  "scope": ["loans"],
-                  "payload": {
-                      "body parameter": "value"
-                  }
-                }
-            ]
-        ]```
-
-
-        {% endapi-method-description %}
+```
+[
+    [
+        "get",
+        {
+          "scope": ["loans"],
+          "payload": {
+              "body parameter": "value"
+          }
+        }
+    ]
+]
+```
+{% endapi-method-description %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
