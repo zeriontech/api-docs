@@ -1,12 +1,11 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Quick Start](getting-started/README.md)
-  * [Install](getting-started/installation.md)
-
 
 ## Websocket API <a id="websockets"></a>
-* [Overview](websocket-api-overview.md)
+* [Quick Start](getting-started/README.md)
+  * [Install](getting-started/installation.md)
+* [API Overview](websocket-api-overview.md)
 * [Namespaces](namespaces/README.md)
   * [/address](namespaces/address.md)
   * [/assets](namespaces/assets.md)
