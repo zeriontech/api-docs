@@ -15,10 +15,10 @@
   * [/dydx](namespaces/dydx.md)
   * [/gas](namespaces/gas.md)
   * [/maker](namespaces/maker.md)
-* [Return Types](websockets/models.md)
-* [Enums](websockets/enums.md)
+* [Return Types](models.md)
+* [Enums](enums.md)
 
 
-## DeFi SDK <a id="second-group"></a>
+## DeFi SDK <a id="defi-sdk"></a>
 
-* [DeFi SDK](second-group/defi-sdk.md)
+* [DeFi SDK](defi-sdk/defi-sdk.md)
