@@ -3,7 +3,21 @@
 Here you can find all the scopes available in this particular namespace. 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="block_lag" %}
 {% api-method-summary %} block-lag {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["block-lag"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% endapi-method-body-parameters %}

@@ -3,14 +3,28 @@
 Here you can find all the scopes available in this particular namespace. 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} prices {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["prices"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -44,7 +58,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} explore-sections {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["explore-sections"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="explore_sections" type="list" %}
@@ -84,14 +112,28 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} info {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["info"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="limit" type="int" %}
@@ -143,14 +185,28 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} full-info {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["full-info"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_code" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -184,14 +240,28 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} charts {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["charts"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="charts_type" type="str" %}
@@ -228,7 +298,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} tags {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["tags"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="tags_group" type="str" %}
@@ -265,7 +349,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} actions {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["actions"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -275,7 +373,7 @@ Default: -
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -309,7 +407,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} stats {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["stats"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -322,7 +434,7 @@ Default: []
 Default: -
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -356,14 +468,28 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} list {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["list"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_codes" type="list" %}
 Default: []
 {% endapi-method-parameter %}
 {% api-method-parameter name="currency" type="enum" %}
-PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
 Default: usd
 {% endapi-method-parameter %}
 {% api-method-parameter name="order_by" type="dict" %}
@@ -400,7 +526,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} tokenlists {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["tokenlists"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="asset_code" type="str" %}
@@ -437,7 +577,21 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
 {% api-method-summary %} categories {% endapi-method-summary %}
-{% api-method-spec %}
+{% api-method-description %}Example request
+
+        [
+            [
+                "get",
+                {
+                  "scope": ["categories"],
+                  "payload": {
+                      "body parameter": "value"
+                  }
+                }
+            ]
+        ]
+
+        {% endapi-method-description %}{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% endapi-method-body-parameters %}
