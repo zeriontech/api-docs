@@ -3,9 +3,10 @@
 Here you can find all the scopes available in this particular namespace. 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} info {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -15,9 +16,11 @@ Here you can find all the scopes available in this particular namespace.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -54,9 +57,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} assets {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -66,9 +70,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -115,9 +121,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} portfolio {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -127,9 +134,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -177,9 +186,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} transactions {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -189,9 +199,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -244,9 +256,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} charts {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -256,9 +269,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -311,9 +326,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} deposits {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -323,9 +339,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -369,9 +387,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} loans {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -381,9 +400,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -427,9 +448,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} locked-assets {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -439,9 +461,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -485,9 +509,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} staked-assets {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -497,9 +522,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -543,9 +570,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} bsc-assets {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -555,9 +583,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
@@ -601,9 +631,10 @@ Successful result.
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
 {% api-method-summary %} polygon-assets {% endapi-method-summary %}
-{% api-method-description %}Example request
+{% api-method-description %}
+Example request
 
-        [
+        ```[
             [
                 "get",
                 {
@@ -613,9 +644,11 @@ Successful result.
                   }
                 }
             ]
-        ]
+        ]```
 
-        {% endapi-method-description %}{% api-method-spec %}
+
+        {% endapi-method-description %}
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
