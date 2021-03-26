@@ -1,18 +1,8 @@
-# /address
-
-## Scopes
-
-Here you can find all the scopes available in this particular namespace.
-
+# (/address)
+## Scopes 
+Here you can find all the scopes available in this particular namespace. 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-info
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} info {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
@@ -21,14 +11,13 @@ Default: -
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address info",
             {
@@ -38,55 +27,44 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "info": "AddressInfo"
+                    "info": AddressInfo
                 }
             }
         ]
 
-        AddressInfo
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-assets
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="asset\_codes" type="list" %}
-Default: \[\]
+{% api-method-parameter name="asset_codes" type="list" %}
+Default: []
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address assets",
             {
@@ -96,55 +74,45 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "assets": "Dict[str, AddressAsset]"
+                    "assets": Dict[str, AddressAsset]
                 }
             }
         ]
 
-        Dict[str, AddressAsset]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-portfolio
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} portfolio {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="portfolio\_fields" type="PortfolioFields" %}
+{% api-method-parameter name="portfolio_fields" type="enum" %}
+PortfolioFields: all, assets
 Default: assets
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address portfolio",
             {
@@ -154,63 +122,50 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "portfolio": "Portfolio"
+                    "portfolio": Portfolio
                 }
             }
         ]
 
-        Portfolio
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-transactions
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} transactions {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="transactions\_limit" type="int" %}
+{% api-method-parameter name="transactions_limit" type="int" %}
 Default: 50
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="transactions\_offset" type="int" %}
+{% api-method-parameter name="transactions_offset" type="int" %}
 Default: 0
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="transactions\_search\_query" type="str" %}
+{% api-method-parameter name="transactions_search_query" type="str" %}
 Default: -
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address transactions",
             {
@@ -220,63 +175,50 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "transactions": "List[Transaction]"
+                    "transactions": List[Transaction]
                 }
             }
         ]
 
-        List[Transaction]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-charts
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} charts {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="charts\_type" type="str" %}
+{% api-method-parameter name="charts_type" type="str" %}
 Default: d
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="charts\_max\_assets" type="int" %}
+{% api-method-parameter name="charts_max_assets" type="int" %}
 Default: 0
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="charts\_min\_percentage" type="int" %}
+{% api-method-parameter name="charts_min_percentage" type="int" %}
 Default: 100
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address charts",
             {
@@ -286,51 +228,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "charts": "Dict[str, List[Tuple[int, float]]]"
+                    "charts": Dict[str, List[Tuple[int, float]]]
                 }
             }
         ]
 
-        Dict[str, List[Tuple[int, float]]]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-deposits
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} deposits {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address deposits",
             {
@@ -340,51 +272,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "deposits": "List[Deposit]"
+                    "deposits": List[Deposit]
                 }
             }
         ]
 
-        List[Deposit]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-loans
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} loans {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address loans",
             {
@@ -394,51 +316,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "loans": "List[Loan]"
+                    "loans": List[Loan]
                 }
             }
         ]
 
-        List[Loan]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-locked-assets
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} locked-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address locked-assets",
             {
@@ -448,51 +360,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "locked-assets": "List[LockedAsset]"
+                    "locked-assets": List[LockedAsset]
                 }
             }
         ]
 
-        List[LockedAsset]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-staked-assets
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} staked-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address staked-assets",
             {
@@ -502,51 +404,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "staked-assets": "List[StakedAsset]"
+                    "staked-assets": List[StakedAsset]
                 }
             }
         ]
 
-        List[StakedAsset]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-bsc-assets
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} bsc-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address bsc-assets",
             {
@@ -556,51 +448,41 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "bsc-assets": "Dict[str, AddressBSCAsset]"
+                    "bsc-assets": Dict[str, AddressBSCAsset]
                 }
             }
         ]
 
-        Dict[str, AddressBSCAsset]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
 {% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
-{% api-method-summary %}
-polygon-assets
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
+{% api-method-summary %} polygon-assets {% endapi-method-summary %}
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="address" type="str" %}
 Default: -
 {% endapi-method-parameter %}
-
 {% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
+Default: []
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="currency" type="PriceCurrency" %}
+{% api-method-parameter name="currency" type="enum" %}
+PriceCurrency: eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf
 Default: usd
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
-
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 Successful result.
 {% endapi-method-response-example-description %}
+```
 
-```text
         [
             "received address polygon-assets",
             {
@@ -610,13 +492,12 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "polygon-assets": "Dict[str, AddressPolygonAsset]"
+                    "polygon-assets": Dict[str, AddressPolygonAsset]
                 }
             }
         ]
 
-        Dict[str, AddressPolygonAsset]
-```
+        ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
