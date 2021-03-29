@@ -22,4 +22,17 @@
 ## DeFi SDK
 
 * [DeFi SDK](defi-sdk/defi-sdk.md)
+* [Supported Protocols](defi-sdk/supported-protocols/README.md)
+  * [Read-only adapters](defi-sdk/supported-protocols/read-only-adapters.md)
+  * [Interactive adapters](defi-sdk/supported-protocols/interactive-adapters.md)
+* [Creating your adapters](defi-sdk/creating-your-adapters/README.md)
+  * [Read-only adapters](defi-sdk/creating-your-adapters/read-only-adapters.md)
+  * [Interactive adapters](defi-sdk/creating-your-adapters/interactive-adapters.md)
+
+---
+
+* [Discord](https://go.zerion.io/discord)
+* [Github](https://github.com/zeriontech/)
+* [Help Center](https://help.zerion.io)
+* [Zerion App](https://app.zerion.io)
 
