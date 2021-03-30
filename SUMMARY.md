@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Featured Partners](featured-partners.md)
 
 ## Websocket API <a id="websockets"></a>
 
@@ -8,7 +9,6 @@
   * [Install](websockets/getting-started/installation.md)
   * [Example](websockets/getting-started/example.md)
 * [API Overview](websockets/websocket-api-overview.md)
-* [Featured Partners](websockets/featured-partners.md)
 * [Namespaces](websockets/namespaces/README.md)
   * [/address](websockets/namespaces/address.md)
   * [/assets](websockets/namespaces/assets.md)
