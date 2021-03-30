@@ -8,6 +8,7 @@
   * [Install](websockets/getting-started/installation.md)
   * [Example](websockets/getting-started/example.md)
 * [API Overview](websockets/websocket-api-overview.md)
+* [Featured Partners](websockets/featured-partners.md)
 * [Namespaces](websockets/namespaces/README.md)
   * [/address](websockets/namespaces/address.md)
   * [/assets](websockets/namespaces/assets.md)
