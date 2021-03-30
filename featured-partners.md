@@ -8,7 +8,7 @@ description: >-
 
 ## Rainbow Wallet
 
-[Rainbow](https://rainbow.me/) was our first integration partner. They are leveraging Zerion's [Websocket API](websockets/getting-started/) for their amazing wallet. Address assets, portfolio performance and other data processed by Zerion presented in a very clean and user-friendly UI. 
+[Rainbow](https://rainbow.me/) leverages Zerion's [Websocket API](websockets/getting-started/) to power the most simple non-custodial Ethereum wallet. Rainbow was our first ever integration partner, and they have been using Zerion for more than a year now. 
 
 ![](.gitbook/assets/image%20%282%29.png)
 
