@@ -1,6 +1,14 @@
+---
+description: >-
+  This documentation is a place for developers looking to integrate or build on
+  top of Zerion.
+---
+
 # Welcome
 
-Hey! Glad to see you are interested in integrating with Zerion. 
+![](.gitbook/assets/new-cover_full.png)
+
+Hey! Glad to see you are interested in integrating with Zerion. Find some options below on how we can work together. If you need some inspiration, check out our [Features Parters section](featured-partners.md).
 
 ### Integrate Zerion API in your app
 
