@@ -1,2 +1,5 @@
 ## Namespaces
-Description of what namespaces are and how to deal with them
+When connecting to a WebSocket, you need to specify a Namespace.
+In case of Zerion's API, we have logically divided our available data into
+several namespaces found in this section. 
+Two most used namespaces are [/address](#address) and [/assets](#assets). 
