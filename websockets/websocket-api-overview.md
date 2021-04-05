@@ -1,10 +1,10 @@
 # API Overview
 
-#### This is a socket-based interactive api based on the [Socket.io](https://socket.io) library.
+#### 💡 This is a socket-based interactive API based on the [Socket.io](https://socket.io) library
 
 ## Overview
 
-In order to connect, a valid `api_token` query parameter must be specified.All tokens are restricted by Origin and therefore a valid `HTTP_ORIGIN` header is expected. Feel free to get started with `http://localhost:3000` as an origin and a Demo Key: `Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy`.
+In order to connect, a valid `api_token` query parameter must be specified. All tokens are restricted by Origin and therefore a valid `HTTP_ORIGIN` header is expected. Feel free to get started using `http://localhost:3000` as an origin and `Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy` as a Demo Key.
 
 ```javascript
 let io_options = {transports: ['websocket'], query: {api_token: 'YOUR API TOKEN'}};

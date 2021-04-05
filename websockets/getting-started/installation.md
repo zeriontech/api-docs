@@ -1,9 +1,9 @@
 # Install
 
-Before using Zerion Websockets API, you need to install relevant dependancies. 
+Before using the Zerion Websocket API, you need to install relevant dependencies. 
 
 {% hint style="warning" %}
-Please, make sure to use [Socket.io v2 client API](https://socket.io/docs/v2/client-api/). 
+Please make sure to use [Socket.io v2 client API](https://socket.io/docs/v2/client-api/). 
 {% endhint %}
 
 {% tabs %}

@@ -8,7 +8,7 @@ The following example connects to the Zerion Websocket API and fetches the portf
 
 {% tabs %}
 {% tab title="JavaScript" %}
-#### Copy and paste the example below to `quickstart.js`
+#### 1. Copy and paste the example below to `quickstart.js`
 
 ```javascript
 let io = require('socket.io-client')
@@ -71,7 +71,7 @@ get(addressSocket, {
 
 ```
 
-#### Run it using `node`
+#### 2. Run it using `node`
 
 ```text
 node quickstart.js
@@ -79,7 +79,7 @@ node quickstart.js
 {% endtab %}
 
 {% tab title="Python" %}
-#### Copy and paste the example below to `quickstart.py`  
+#### 1. Copy and paste the example below to `quickstart.py`  
 
 ```python
 import asyncio
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 
 ```
 
-#### Run it using `python`
+#### 2. Run it using `python`
 
 ```bash
 python3 quickstart.py
