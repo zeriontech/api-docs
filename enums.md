@@ -1,30 +1,5 @@
 
 ## Structures
-### PortfolioFields
- - "all"
- - "assets"
-
-### RDBTransactionType
- - "send"
- - "receive"
- - "trade"
- - "authorize"
- - "execution"
- - "deployment"
- - "cancel"
- - "deposit"
- - "withdraw"
- - "borrow"
- - "repay"
- - "stake"
- - "unstake"
- - "claim"
-
-### Direction
- - "in"
- - "out"
- - "self"
-
 ### AssetActionType
  - "buy"
  - "sell"
@@ -52,6 +27,9 @@
  - "Close CDP"
  - "Transfer CDP"
  - "Migrate CDP"
+ - "Open Trove"
+ - "Adjust Trove"
+ - "Close Trove"
  - "Open Vault"
  - "Close Vault"
  - "Transfer Vault"
@@ -79,14 +57,18 @@
  - "balancer"
  - "bancor"
  - "bitcoin"
+ - "bsc"
+ - "bsc-trash"
  - "cream"
  - "curve"
+ - "curve-metapool"
  - "compound"
  - "dmm"
  - "dodo"
  - "dodo-v2"
  - "enzyme"
  - "ethereum"
+ - "fei"
  - "fulcrum"
  - "harvest-vault"
  - "idle"
@@ -104,6 +86,9 @@
  - "one-inch"
  - "pickle-jar"
  - "piedao-pool"
+ - "piedao-experipie"
+ - "polygon"
+ - "polygon-trash"
  - "pool-together"
  - "realt"
  - "saddle"
@@ -123,10 +108,9 @@
  - "yearn-vault-v2"
  - "None"
 
-### TransactionStatus
- - "confirmed"
- - "failed"
- - "pending"
+### CategoryDisplayType
+ - "short"
+ - "detailed"
 
 ### MakerDSSActionType
  - "open"
@@ -136,10 +120,6 @@
  - "repay"
  - "transfer"
  - "liquidate"
-
-### CategoryDisplayType
- - "short"
- - "detailed"
 
 ### PriceCurrency
  - "eth"
@@ -158,4 +138,34 @@
  - "zar"
  - "cny"
  - "chf"
+
+### Direction
+ - "in"
+ - "out"
+ - "self"
+
+### RDBTransactionType
+ - "send"
+ - "receive"
+ - "trade"
+ - "authorize"
+ - "execution"
+ - "deployment"
+ - "cancel"
+ - "deposit"
+ - "withdraw"
+ - "borrow"
+ - "repay"
+ - "stake"
+ - "unstake"
+ - "claim"
+
+### PortfolioFields
+ - "all"
+ - "assets"
+
+### TransactionStatus
+ - "confirmed"
+ - "failed"
+ - "pending"
 

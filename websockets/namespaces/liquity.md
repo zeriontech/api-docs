@@ -1,14 +1,14 @@
-# (/block_lag)
+# (/liquity)
 ## Scopes 
 Here you can find all the scopes available in this particular namespace. 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="block_lag" %}
-{% api-method-summary %} block-lag {% endapi-method-summary %}
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="liquity" %}
+{% api-method-summary %} actions {% endapi-method-summary %}
 {% api-method-description %}
 Example request
 `[
     "get",
     {
-      "scope": ["block-lag"],
+      "scope": ["actions"],
       "payload": {
           "body parameter": "value"
       }
@@ -18,6 +18,9 @@ Example request
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="address" type="str" %}
+Default: -
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
@@ -28,7 +31,7 @@ Successful result.
 ```
 
         [
-            "received block_lag block-lag",
+            "received liquity actions",
             {
                 "meta": {
                     "status": "ok",
@@ -36,7 +39,7 @@ Successful result.
                     "request parameter2": "value2"
                 },
                 "payload": {
-                    "block-lag": BlockLag
+                    "actions": List[LiquityTroveAction]
                 }
             }
         ]

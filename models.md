@@ -231,6 +231,16 @@
  | slow | int | yes |
  | source | [GasPriceSource](#gaspricesource) |  |
  | datetime | datetime |  |
+### LiquityTroveAction
+| Name | Type | Optional |
+| ---  | ---  | -------- |
+ | id | str |  |
+ | trove | int |  |
+ | type | str |  |
+ | transaction_hash | str |  |
+ | debt_change | float | yes |
+ | collateral_change | float | yes |
+ | datetime | datetime |  |
 ### Loan
 | Name | Type | Optional |
 | ---  | ---  | -------- |
