@@ -10,7 +10,7 @@ If you have any questions about DeFi SDK, feel free to reach out to us on our [D
 
 ![](../.gitbook/assets/twitter_final.png)
 
-### Features
+## Features
 
 **💥Query user assets and debt deposited in DeFi protocols like Maker, Aave, dYdX, etc.**
 
@@ -22,5 +22,5 @@ If you have any questions about DeFi SDK, feel free to reach out to us on our [D
 
 **✨Interact with multiple DeFi protocols in a unified way**
 
-> See [Router]() contract description.
+> See [Router](defi-sdk.md) contract description.
 

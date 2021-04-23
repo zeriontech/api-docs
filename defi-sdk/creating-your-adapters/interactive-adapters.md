@@ -16,10 +16,10 @@ To create new token adapter, one has to implement [**InteractiveAdapter**](https
 
 ```bash
 function deposit(TokenAmount[] calldata tokenAmounts, bytes calldata data)
-		external
-		payable
-		override
-		returns (address[] memory tokensToBeWithdrawn)
+        external
+        payable
+        override
+        returns (address[] memory tokensToBeWithdrawn)
 ```
 
 `tokenAmounts` — tokens that will be used in the action \(e.g. DAI in case of deposit to Compound\).
@@ -71,6 +71,4 @@ Remove names of unused arguments.
 Use `npx prettier ./contracts/**/*.sol --write` to fix linter issues.
 
 Add tests for interactions it `test/` directory, use Uniswap, Weth, and other required adapters.
-
-
 
