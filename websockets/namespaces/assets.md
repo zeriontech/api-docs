@@ -4,35 +4,29 @@
 
 Here you can find all the scopes available in this particular namespace.
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-prices
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="prices" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["prices"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["prices"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_codes" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="asset_codes" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets prices",
             {
@@ -47,40 +41,26 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-explore-sections
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="explore-sections" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["explore-sections"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["explore-sections"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="explore\_sections" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="explore_sections" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="explore\_sections\_aliases" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="explore_sections_aliases" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets explore-sections",
             {
@@ -95,64 +75,56 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-info
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="info" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["info"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["info"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_codes" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="asset_codes" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-parameter name="limit" type="int" %}
+: 
+
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="limit" type="int" %}
 Default: 10000
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="offset" type="int" %}
+{% swagger-parameter in="body" name="offset" type="int" %}
 Default: 0
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="explore\_section" type="str" %}
+{% swagger-parameter in="body" name="explore_section" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="order\_by" type="dict" %}
+{% swagger-parameter in="body" name="order_by" type="dict" %}
 Default: {}
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="category\_id" type="str" %}
+{% swagger-parameter in="body" name="category_id" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="search\_query" type="str" %}
+{% swagger-parameter in="body" name="search_query" type="str" %}
 Default: -
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets info",
             {
@@ -167,40 +139,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-full-info
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="full-info" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["full-info"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["full-info"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_code" type="str" %}
+{% swagger-parameter in="body" name="asset_code" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets full-info",
             {
@@ -215,44 +179,36 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-charts
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="charts" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["charts"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["charts"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_codes" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="asset_codes" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-parameter name="charts\_type" type="str" %}
+: 
+
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="charts_type" type="str" %}
 Default: d
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets charts",
             {
@@ -267,36 +223,22 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-tags
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="tags" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["tags"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["tags"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="tags\_group" type="str" %}
+{% swagger-parameter in="body" name="tags_group" type="str" %}
 Default: all
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets tags",
             {
@@ -311,44 +253,36 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-actions
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="actions" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["actions"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["actions"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="asset\_code" type="str" %}
+{% swagger-parameter in="body" name="asset_code" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets actions",
             {
@@ -363,48 +297,40 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-stats
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="stats" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["stats"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["stats"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="addresses" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="addresses" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="asset\_code" type="str" %}
+{% swagger-parameter in="body" name="asset_code" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets stats",
             {
@@ -419,44 +345,36 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-list
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="list" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["list"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["list"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_codes" type="list" %}
-Default: \[\]
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="asset_codes" type="list" %}
+Default: []
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-parameter name="order\_by" type="dict" %}
+: 
+
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="order_by" type="dict" %}
 Default: {}
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets list",
             {
@@ -471,36 +389,22 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-tokenlists
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="tokenlists" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["tokenlists"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["tokenlists"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="asset\_code" type="str" %}
+{% swagger-parameter in="body" name="asset_code" type="str" %}
 Default: -
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets tokenlists",
             {
@@ -515,30 +419,18 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
-{% api-method-summary %}
-categories
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="assets" method="ws" summary="categories" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["categories"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["categories"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received assets categories",
             {
@@ -553,8 +445,5 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

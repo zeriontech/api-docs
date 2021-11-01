@@ -4,25 +4,15 @@
 
 Here you can find all the scopes available in this particular namespace.
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="gas" %}
-{% api-method-summary %}
-price
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="gas" method="ws" summary="price" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["price"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["price"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received gas price",
             {
@@ -37,8 +27,5 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

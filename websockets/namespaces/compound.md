@@ -4,35 +4,29 @@
 
 Here you can find all the scopes available in this particular namespace.
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="compound" %}
-{% api-method-summary %}
-info
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="compound" method="ws" summary="info" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["info"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["info"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received compound info",
             {
@@ -47,36 +41,28 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="compound" %}
-{% api-method-summary %}
-assets
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="compound" method="ws" summary="assets" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["assets"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["assets"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received compound assets",
             {
@@ -91,40 +77,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="compound" %}
-{% api-method-summary %}
-actions
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="compound" method="ws" summary="actions" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["actions"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["actions"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received compound actions",
             {
@@ -139,40 +117,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="compound" %}
-{% api-method-summary %}
-deposits
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="compound" method="ws" summary="deposits" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["deposits"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["deposits"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received compound deposits",
             {
@@ -187,40 +157,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="compound" %}
-{% api-method-summary %}
-loans
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="compound" method="ws" summary="loans" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["loans"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["loans"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="address" type="str" %}
+{% swagger-parameter in="body" name="address" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received compound loans",
             {
@@ -235,8 +197,5 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

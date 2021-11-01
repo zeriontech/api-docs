@@ -4,35 +4,29 @@
 
 Here you can find all the scopes available in this particular namespace.
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
-{% api-method-summary %}
-cdp
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="maker" method="ws" summary="cdp" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["cdp"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["cdp"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="cdp\_id" type="str" %}
+{% swagger-parameter in="body" name="cdp_id" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received maker cdp",
             {
@@ -47,40 +41,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
-{% api-method-summary %}
-vault
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="maker" method="ws" summary="vault" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["vault"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["vault"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="vault\_id" type="str" %}
+{% swagger-parameter in="body" name="vault_id" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received maker vault",
             {
@@ -95,40 +81,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
-{% api-method-summary %}
-cdp-actions
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="maker" method="ws" summary="cdp-actions" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["cdp-actions"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["cdp-actions"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="cdp\_id" type="str" %}
+{% swagger-parameter in="body" name="cdp_id" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received maker cdp-actions",
             {
@@ -143,40 +121,32 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="WS" host="wss://api-v4.zerion.io/" path="maker" %}
-{% api-method-summary %}
-vault-actions
-{% endapi-method-summary %}
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="maker" method="ws" summary="vault-actions" %}
+{% swagger-description %}
+Example request 
 
-{% api-method-description %}
-Example request `[ "get", { "scope": ["vault-actions"], "payload": { "body parameter": "value" } } ]`
-{% endapi-method-description %}
+`[ "get", { "scope": ["vault-actions"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="vault\_id" type="str" %}
+{% swagger-parameter in="body" name="vault_id" type="str" %}
 Default: -
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="enum" %}
-**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`. Default: usd
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful result.
-{% endapi-method-response-example-description %}
+: 
 
-```text
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
         [
             "received maker vault-actions",
             {
@@ -191,8 +161,5 @@ Successful result.
             }
         ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}
