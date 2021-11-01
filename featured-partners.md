@@ -44,6 +44,6 @@ Zerion is a proud user of [Alchemy](https://www.alchemy.com) - blockchain node i
 
 ### CoinGecko
 
-We use CoinGecko to find the most accurate price data for many of the assets on Zerion.&#x20;
+We use [CoinGecko](https://www.coingecko.com) to find the most accurate price data for many of the assets on Zerion.&#x20;
 
 ![](<.gitbook/assets/image (2).png>)
