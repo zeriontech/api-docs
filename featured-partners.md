@@ -4,6 +4,12 @@ description: Explore how other teams use Zerion's API to power their amazing app
 
 # Featured Partners
 
+> **"At prysm.xyz, we use Zerion APIs for historical investing activity and current token ownership. **
+>
+> **Transactions are fast to query and include accurate fiat conversion rates, allowing our users to calculate comprehensive and accurate investing performance. The ability to create subscriptions on addresses allows us to follow wallets and update performance stats in near real time. Most importantly, the Zerion APIs scale to our need"**
+>
+> **                                                                   - **Stewart Bracken, Head of Blockchain Infrastructure at Prysm
+
 ## Rainbow Wallet
 
 [Rainbow](https://rainbow.me) leverages Zerion's [Websocket API](websockets/getting-started/) to power the most simple non-custodial Ethereum wallet. Rainbow was our very first integration partner, and they have been using Zerion for more than a year now.
@@ -31,6 +37,7 @@ description: Explore how other teams use Zerion's API to power their amazing app
 And many more, including:
 
 * [https://open-orgs.info/](https://open-orgs.info)
+* https://prysm.xyz/
 * [https://mask.io/](https://mask.io)
 * & more building right now ⚒️
 
