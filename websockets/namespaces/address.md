@@ -511,3 +511,91 @@ Default: []
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="address" method="ws" summary="optimism-assets" %}
+{% swagger-description %}
+Example request 
+
+`[ "get", { "scope": ["optimism-assets"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="address" type="str" %}
+Default: -
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="addresses" type="list" %}
+Default: []
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
+
+: 
+
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
+        [
+            "received address optimism-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "optimism-assets": Dict[str, AddressOptimismAsset]
+                }
+            }
+        ]
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger baseUrl="wss://api-v4.zerion.io/" path="address" method="ws" summary="arbitrum-assets" %}
+{% swagger-description %}
+Example request 
+
+`[ "get", { "scope": ["arbitrum-assets"], "payload": { "body parameter": "value" } } ]`
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="address" type="str" %}
+Default: -
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="addresses" type="list" %}
+Default: []
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="currency" type="enum" %}
+**PriceCurrency**
+
+: 
+
+`eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`
+
+. Default: usd
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Successful result." %}
+```
+        [
+            "received address arbitrum-assets",
+            {
+                "meta": {
+                    "status": "ok",
+                    "request parameter1": "value1",
+                    "request parameter2": "value2"
+                },
+                "payload": {
+                    "arbitrum-assets": Dict[str, AddressArbitrumAsset]
+                }
+            }
+        ]
+```
+{% endswagger-response %}
+{% endswagger %}
