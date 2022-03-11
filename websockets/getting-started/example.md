@@ -8,65 +8,86 @@ The following example connects to the Zerion Websocket API and fetches the portf
 
 {% tabs %}
 {% tab title="JavaScript" %}
+
 ## 1. Copy and paste the example below to `quickstart.js`
 
 ```javascript
-let io = require('socket.io-client')
+let io = require("socket.io-client");
 
-const BASE_URL = 'wss://api-v4.zerion.io/';
+const BASE_URL = "wss://api-v4.zerion.io/";
 
 function verify(request, response) {
-  // each value in request payload must be found in response meta
-  return Object.keys(request.payload).every(key => {
-    const requestValue = request.payload[key];
-    const responseMetaValue = response.meta[key];
-    if (typeof requestValue === 'object') {
-      return JSON.stringify(requestValue) === JSON.stringify(responseMetaValue);
-    }
-    return responseMetaValue === requestValue;
-  });
+	// each value in request payload must be found in response meta
+	return Object.keys(request.payload).every((key) => {
+		const requestValue = request.payload[key];
+
+		let responseMetaValue;
+		responseMetaValue = response.meta[key];
+		if (!responseMetaValue) {
+			responseMetaValue = response.payload.portfolio;
+		}
+
+		if (typeof requestValue === "object") {
+			var key1 = Object.keys(requestValue).sort();
+			var key2 = Object.keys(responseMetaValue).sort();
+			return JSON.stringify(key1) === JSON.stringify(key2);
+		}
+		return responseMetaValue === requestValue;
+	});
 }
 
 const addressSocket = {
-  namespace: 'address',
-  socket: io(`${BASE_URL}address`, {
-    transports: ['websocket'],
-    timeout: 60000,
-    query: {
-      api_token:
-        'Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy',
-    },
-  }),
+	namespace: "address",
+	socket: io(`${BASE_URL}address`, {
+		transports: ["websocket"],
+		timeout: 60000,
+		query: {
+			api_token: "Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy",
+		},
+	}),
 };
 
 function get(socketNamespace, requestBody) {
-  return new Promise(resolve => {
-    const { socket, namespace } = socketNamespace;
-    function handleReceive(data) {
-      if (verify(requestBody, data)) {
-        unsubscribe();
-        resolve(data);
-      }
-    }
-    const model = requestBody.scope[0];
-    function unsubscribe() {
-      socket.off(`received ${namespace} ${model}`, handleReceive);
-      socket.emit('unsubscribe', requestBody);
-    }
-    socket.emit('get', requestBody);
-    socket.on(`received ${namespace} ${model}`, handleReceive);
-  });
+	return new Promise((resolve) => {
+		const { socket, namespace } = socketNamespace;
+		function handleReceive(data) {
+			if (verify(requestBody, data)) {
+				unsubscribe();
+				resolve(data);
+			}
+		}
+		const model = requestBody.scope[0];
+		function unsubscribe() {
+			socket.off(`received ${namespace} ${model}`, handleReceive);
+			socket.emit("unsubscribe", requestBody);
+		}
+		socket.emit("get", requestBody);
+		socket.on(`received ${namespace} ${model}`, handleReceive);
+	});
 }
 
 get(addressSocket, {
-  scope: ['portfolio'],
-  payload: {
-      address: '0x7e5ce10826ee167de897d262fcc9976f609ecd2b',
-      currency: 'usd',
-      portfolio_fields: 'all'
-  },
-}).then(response => {
-  console.log(response.payload.portfolio);
+	scope: ["portfolio"],
+	payload: {
+		address: "0x7e5ce10826ee167de897d262fcc9976f609ecd2b",
+		currency: "usd",
+		portfolio: {
+			assets_value: "",
+			deposited_value: "",
+			borrowed_value: "",
+			locked_value: "",
+			staked_value: "",
+			arbitrum_assets_value: "",
+			bsc_assets_value: "",
+			polygon_assets_value: "",
+			optimism_assets_value: "",
+			total_value: "",
+			absolute_change_24h: "",
+			relative_change_24h: "",
+		},
+	},
+}).then((response) => {
+	console.log(response.payload.portfolio);
 });
 ```
 
@@ -75,9 +96,11 @@ get(addressSocket, {
 ```text
 node quickstart.js
 ```
+
 {% endtab %}
 
 {% tab title="Python" %}
+
 ## 1. Copy and paste the example below to `quickstart.py`
 
 ```python
@@ -204,6 +227,6 @@ if __name__ == '__main__':
 ```bash
 python3 quickstart.py
 ```
+
 {% endtab %}
 {% endtabs %}
-
