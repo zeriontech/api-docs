@@ -8,23 +8,17 @@ The following example connects to the Zerion Websocket API and fetches the portf
 
 {% tabs %}
 {% tab title="JavaScript" %}
+
 ## 1. Copy and paste the example below to `quickstart.js`
 
 ```javascript
-let io = require('socket.io-client')
+let io = require('socket.io-client');
 
 const BASE_URL = 'wss://api-v4.zerion.io/';
 
 function verify(request, response) {
-  // each value in request payload must be found in response meta
-  return Object.keys(request.payload).every(key => {
-    const requestValue = request.payload[key];
-    const responseMetaValue = response.meta[key];
-    if (typeof requestValue === 'object') {
-      return JSON.stringify(requestValue) === JSON.stringify(responseMetaValue);
-    }
-    return responseMetaValue === requestValue;
-  });
+  const keys = ['address', 'currency'];
+  return keys.every(key => request.payload[key] === response.meta[key]);
 }
 
 const addressSocket = {
@@ -33,8 +27,7 @@ const addressSocket = {
     transports: ['websocket'],
     timeout: 60000,
     query: {
-      api_token:
-        'Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy',
+      api_token: 'Demo.ukEVQp6L5vfgxcz4sBke7XvS873GMYHy',
     },
   }),
 };
@@ -61,9 +54,9 @@ function get(socketNamespace, requestBody) {
 get(addressSocket, {
   scope: ['portfolio'],
   payload: {
-      address: '0x7e5ce10826ee167de897d262fcc9976f609ecd2b',
-      currency: 'usd',
-      portfolio_fields: 'all'
+    address: '0x7e5ce10826ee167de897d262fcc9976f609ecd2b',
+    currency: 'usd',
+    portfolio_fields: 'all',
   },
 }).then(response => {
   console.log(response.payload.portfolio);
@@ -75,9 +68,11 @@ get(addressSocket, {
 ```text
 node quickstart.js
 ```
+
 {% endtab %}
 
 {% tab title="Python" %}
+
 ## 1. Copy and paste the example below to `quickstart.py`
 
 ```python
@@ -204,6 +199,6 @@ if __name__ == '__main__':
 ```bash
 python3 quickstart.py
 ```
+
 {% endtab %}
 {% endtabs %}
-
