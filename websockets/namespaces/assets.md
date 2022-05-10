@@ -172,7 +172,7 @@ Successful result.
             "request parameter2": "value2"
         },
         "payload": {
-            "full-info": Optional[zerion_api.entities.socketio.AssetFullInfo]
+            "full-info": Optional[AssetFullInfo]
         }
     }
 ]
@@ -604,7 +604,7 @@ Successful result.
             "request parameter2": "value2"
         },
         "payload": {
-            "nft-info": Optional[zerion_api.entities.socketio.NFTInfo]
+            "nft-info": Optional[NFTInfo]
         }
     }
 ]
