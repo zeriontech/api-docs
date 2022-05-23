@@ -3,7 +3,7 @@
 * [Welcome](README.md)
 * [Featured Partners](featured-partners.md)
 
-## Websocket API <a href="websockets" id="websockets"></a>
+## Websocket API <a href="#websockets" id="websockets"></a>
 
 * [Quick Start](websockets/getting-started/README.md)
   * [Install](websockets/getting-started/installation.md)
@@ -33,7 +33,7 @@
 
 ***
 
-* [Discord](https://go.zerion.io/discord)
+* [Discord (Technical API Support)](https://zerion.io/discord)
 * [Github](https://github.com/zeriontech/)
 * [Help Center](https://help.zerion.io)
 * [Zerion App](https://app.zerion.io)
