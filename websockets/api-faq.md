@@ -60,5 +60,5 @@ With the Zerion API, you can integrate all of DeFi in your application, without 
 
 We would love to. We run a grant program for devs if you'd like to build on our API & we are happy to support you with documentation/consultation. We also run frequent hackathons (DeFinition) where we directly support the developer community.&#x20;
 
-Reach out in our [Discord's](http://go.zerion.io/discord) 💻devs-lounge channel for any help!
+Reach out in our [Discord's](https://zerion.io/discord) 💻devs-lounge channel for any help!
 
