@@ -172,7 +172,7 @@ Successful result.
             "request parameter2": "value2"
         },
         "payload": {
-            "full-info": Optional[AssetFullInfo]
+            "full-info": Optional[zerion_api.entities.socketio.AssetFullInfo]
         }
     }
 ]
@@ -604,7 +604,184 @@ Successful result.
             "request parameter2": "value2"
         },
         "payload": {
-            "nft-info": Optional[NFTInfo]
+            "nft-info": Optional[zerion_api.entities.socketio.nft.NFTInfo]
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
+{% api-method-summary %} nft-collection-info {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["nft-collection-info"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="currency" type="enum" %}
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
+Default: usd
+{% endapi-method-parameter %}
+{% api-method-parameter name="collection_slug" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received assets nft-collection-info",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "nft-collection-info": Optional[zerion_api.entities.socketio.nft.NFTCollectionInfo]
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
+{% api-method-summary %} nft-collections {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["nft-collections"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="currency" type="enum" %}
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
+Default: usd
+{% endapi-method-parameter %}
+{% api-method-parameter name="limit" type="int" %}
+Default: 10000
+{% endapi-method-parameter %}
+{% api-method-parameter name="cursor" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="sorted_by" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received assets nft-collections",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "nft-collections": PaginatedData
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="assets" %}
+{% api-method-summary %} nfts {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["nfts"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="currency" type="enum" %}
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
+Default: usd
+{% endapi-method-parameter %}
+{% api-method-parameter name="limit" type="int" %}
+Default: 10000
+{% endapi-method-parameter %}
+{% api-method-parameter name="collection_slug" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="cursor" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="sorted_by" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received assets nfts",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "nfts": PaginatedData
         }
     }
 ]

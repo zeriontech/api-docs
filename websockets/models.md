@@ -1,46 +1,30 @@
 # Return Types
 
-
-
 ## AddressArbitrumAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [L2Asset](#l2asset) |  |
  | quantity | str |  |
-
-
-
-
 ## AddressAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [Asset](#asset) |  |
  | quantity | str |  |
-
-
-
-
+## AddressAvalancheAsset
+| Name | Type | Optional |
+| ---  | ---  | -------- |
+ | asset | [L2Asset](#l2asset) |  |
+ | quantity | str |  |
 ## AddressBSCAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [L2Asset](#l2asset) |  |
  | quantity | str |  |
-
-
-
-
-## AddressBoost
+## AddressFantomAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
- | address | str |  |
- | fee | float |  |
- | boost_status | [BoostStatus](#booststatus) | yes |
- | boost_expiration | datetime | yes |
- | tokens | [BoostToken](#boosttoken) | yes |
-
-
-
-
+ | asset | [L2Asset](#l2asset) |  |
+ | quantity | str |  |
 ## AddressInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -50,19 +34,11 @@
  | cdps | int | yes |
  | vaults | int | yes |
  | aggregated_at | int | yes |
-
-
-
-
 ## AddressL2Asset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [L2Asset](#l2asset) |  |
  | quantity | str |  |
-
-
-
-
 ## AddressNFT
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -74,37 +50,16 @@
  | standard | str |  |
  | displayed_on_chart | bool |  |
  | value | float | yes |
-
-
-
-
 ## AddressOptimismAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [L2Asset](#l2asset) |  |
  | quantity | str |  |
-
-
-
-
 ## AddressPolygonAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [L2Asset](#l2asset) |  |
  | quantity | str |  |
-
-
-
-
-## AddressPositions
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | positions | [Position](#position) | yes |
- | aggregation_in_progress | bool |  |
-
-
-
-
 ## Asset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -113,16 +68,17 @@
  | name | str |  |
  | symbol | str |  |
  | decimals | int |  |
- | implementations | ChainId | yes |
- | type | AssetType | yes |
+ | implementations | Mapping[str, [AssetImplementation](#assetimplementation)] |  |
+ | type | AssetType |  |
  | icon_url | str | yes |
  | price | [Price](#price) | yes |
  | is_displayable | bool |  |
  | is_verified | bool |  |
-
-
-
-
+## AssetImplementation
+| Name | Type | Optional |
+| ---  | ---  | -------- |
+ | address | str | yes |
+ | decimals | int |  |
 ## AssetAction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -137,28 +93,16 @@
  | status | [TransactionStatus](#transactionstatus) |  |
  | direction | [Direction](#direction) |  |
  | fee | [AssetActionFee](#assetactionfee) | yes |
-
-
-
-
 ## AssetActionAmount
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | base | float |  |
  | currency | float | yes |
-
-
-
-
 ## AssetActionFee
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | quantity | str |  |
  | value | float |  |
-
-
-
-
 ## AssetComponent
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -166,19 +110,11 @@
  | quantity | float |  |
  | share | float |  |
  | allocation | float |  |
-
-
-
-
 ## AssetDescription
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset_code | str |  |
  | full | str | yes |
-
-
-
-
 ## AssetFullInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -199,10 +135,6 @@
  | relevant_resources | [AssetRelevantResource](#assetrelevantresource) | yes |
  | tags | str | yes |
  | is_tradable | bool |  |
-
-
-
-
 ## AssetFullInfoStats
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -210,19 +142,6 @@
  | year_min | float | yes |
  | year_max | float | yes |
  | volume_24h | float | yes |
-
-
-
-
-## AssetImplementation
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | address | str | yes |
- | decimals | int |  |
-
-
-
-
 ## AssetInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -237,20 +156,12 @@
  | circulating_supply | float | yes |
  | relative_changes | str | yes |
  | tags | str | yes |
-
-
-
-
 ## AssetRelevantResource
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | name | str |  |
  | url | str |  |
  | displayable_name | str | yes |
-
-
-
-
 ## AssetStats
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -262,37 +173,17 @@
  | avg_buy_price_net | float | yes |
  | avg_sell_price | float | yes |
  | avg_sell_price_net | float | yes |
-
-
-
-
 ## AssetTag
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | id | str |  |
-
-
-
-
+## AssetType
+| Name | Type | Optional |
+| ---  | ---  | -------- |
 ## BlockLag
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | block_lag | int | yes |
-
-
-
-
-## BoostToken
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | name | str |  |
- | amount | str |  |
- | boost_status | [BoostStatus](#booststatus) | yes |
- | asset_code | str |  |
-
-
-
-
 ## Category
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -301,62 +192,6 @@
  | tagline | str |  |
  | order_by | str | yes |
  | display_type | [CategoryDisplayType](#categorydisplaytype) |  |
-
-
-
-
-## ChainGasPriceInfo
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | source | str | yes |
- | datetime | datetime |  |
- | info | str | yes |
-
-
-
-
-## ChainInfo
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | id | str |  |
- | chain | str |  |
- | evm_id | int | yes |
- | external_id | str | yes |
- | name | str |  |
- | node_urls | str | yes |
- | icon_url | str |  |
- | base_asset_id | str |  |
- | block_explorer_urls | str | yes |
- | explorer_token_url | str | yes |
- | explorer_tx_url | str | yes |
- | explorer_home_url | str | yes |
- | explorer_name | str | yes |
- | rpc_url_internal | str | yes |
-
-
-## ChainInfoAsset
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | id | str |  |
- | address | str |  |
- | name | str |  |
- | symbol | str |  |
- | decimals | int |  |
-
-
-
-
-## ClassicGasPriceInfo
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | slow | int | yes |
- | standard | int | yes |
- | fast | int | yes |
- | rapid | int | yes |
-
-
-
-
 ## CompoundAction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -368,10 +203,6 @@
  | ctoken_value | float | yes |
  | underlying_value | float | yes |
  | datetime | datetime |  |
-
-
-
-
 ## CompoundAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -381,10 +212,6 @@
  | borrow_rate | float | yes |
  | supply_rate | float | yes |
  | exchange_rate | float | yes |
-
-
-
-
 ## CompoundDeposit
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -392,10 +219,6 @@
  | deposited | float |  |
  | earned_interest | float |  |
  | ctokens | int |  |
-
-
-
-
 ## CompoundInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -403,20 +226,12 @@
  | deposits | [CompoundDeposit](#compounddeposit) | yes |
  | total_debt | float |  |
  | total_collateral | float |  |
-
-
-
-
 ## CompoundLoan
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | asset | [CompoundAsset](#compoundasset) |  |
  | borrowed | float |  |
  | accrued_interest | float |  |
-
-
-
-
 ## Deposit
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -428,10 +243,6 @@
  | section | str |  |
  | protocol | str |  |
  | displayed_on_chart | bool |  |
-
-
-
-
 ## DyDxAccountBalance
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -440,22 +251,6 @@
  | normalized_balance | float |  |
  | balance | float |  |
  | asset | [Asset](#asset) |  |
-
-
-
-
-## EIP1559GasPriceInfo
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | base_fee | int | yes |
- | slow | [GasFeeInfo](#gasfeeinfo) |  |
- | standard | [GasFeeInfo](#gasfeeinfo) |  |
- | fast | [GasFeeInfo](#gasfeeinfo) |  |
- | rapid | [GasFeeInfo](#gasfeeinfo) |  |
-
-
-
-
 ## ExploreSection
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -464,27 +259,6 @@
  | tagline | str |  |
  | order | int |  |
  | alias | str | yes |
-
-
-## FullTotalValue
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | last_price | float |  |
- | floor_price | float |  |
-
-
-
-
-## GasFeeInfo
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | priority_fee | int |  |
- | max_fee | int |  |
- | estimation_seconds | int | yes |
-
-
-
-
 ## GasPriceInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -492,12 +266,8 @@
  | fast | int | yes |
  | standard | int | yes |
  | slow | int | yes |
- | source | str |  |
+ | source | [GasPriceSource](#gaspricesource) |  |
  | datetime | datetime |  |
-
-
-
-
 ## L2Asset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -507,10 +277,6 @@
  | decimals | int |  |
  | icon_url | str | yes |
  | value | float | yes |
-
-
-
-
 ## LiquityTroveAction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -521,10 +287,6 @@
  | debt_change | float | yes |
  | collateral_change | float | yes |
  | datetime | datetime |  |
-
-
-
-
 ## Loan
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -536,10 +298,6 @@
  | section | str |  |
  | protocol | str |  |
  | displayed_on_chart | bool |  |
-
-
-
-
 ## LockedAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -550,10 +308,6 @@
  | section | str |  |
  | protocol | str |  |
  | displayed_on_chart | bool |  |
-
-
-
-
 ## MakerCDP
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -561,10 +315,6 @@
  | owner | str |  |
  | debt | float |  |
  | collateral | float |  |
-
-
-
-
 ## MakerCDPAction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -576,10 +326,6 @@
  | peth_value | float | yes |
  | owner | str | yes |
  | new_owner | str | yes |
-
-
-
-
 ## MakerVault
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -592,10 +338,6 @@
  | accrued_interest | float |  |
  | collateral | float |  |
  | collateral_type | str |  |
-
-
-
-
 ## MakerVaultAction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -609,10 +351,6 @@
  | owner | str | yes |
  | new_owner | str | yes |
  | datetime | datetime |  |
-
-
-
-
 ## NFTAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -624,45 +362,26 @@
  | preview | [NFTContent](#nftcontent) |  |
  | detail | [NFTContent](#nftcontent) |  |
  | name | str | yes |
- | type | AssetType | yes |
+ | type | AssetType |  |
  | tags | str | yes |
- | last_price | float | yes |
- | floor_price | float | yes |
- | total_last_price | float | yes |
- | total_floor_price | float | yes |
+ | price | [Price](#price) | yes |
  | is_displayable | bool |  |
  | is_verified | bool |  |
- | collection | [NFTCollection](#nftcollection) | yes |
- | changed_at | int | yes |
-
-
-
-
 ## NFTAttribute
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | key | str |  |
  | value | str |  |
-
-
-
-
 ## NFTCollection
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | name | str |  |
  | description | str | yes |
  | icon_url | str | yes |
-
-
-
-
 ## NFTContent
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | url | str | yes |
-
-
 ## NFTInfo
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -671,19 +390,11 @@
  | description | str | yes |
  | attributes | [NFTAttribute](#nftattribute) | yes |
  | relevant_urls | [NFTRelevantURL](#nftrelevanturl) | yes |
-
-
-
-
 ## NFTRelevantURL
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | name | str |  |
  | url | str |  |
-
-
-
-
 ## Portfolio
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -693,65 +404,12 @@
  | locked_value | float |  |
  | staked_value | float |  |
  | arbitrum_assets_value | float |  |
- | aurora_assets_value | float |  |
- | avalanche_assets_value | float |  |
  | bsc_assets_value | float |  |
- | ethereum_assets_value | float |  |
- | fantom_assets_value | float |  |
- | loopring_assets_value | float |  |
- | optimism_assets_value | float |  |
  | polygon_assets_value | float |  |
- | solana_assets_value | float |  |
- | xdai_assets_value | float |  |
- | nft_last_price_value | float |  |
- | nft_floor_price_value | float |  |
+ | optimism_assets_value | float |  |
  | total_value | float |  |
  | absolute_change_24h | float |  |
  | relative_change_24h | float | yes |
-
-
-
-
-## PortfolioChange
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | absolute | float |  |
- | relative | float | yes |
-
-
-
-
-## PortfolioDecomposition
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | positions_types_distribution | str | yes |
- | positions_chains_distribution | str | yes |
- | nfts | str | yes |
- | change_24h | [PortfolioChange](#portfoliochange) |  |
- | total_value | float |  |
-
-
-
-
-## Position
-| Name | Type | Optional |
-| ---  | ---  | -------- |
- | id | str |  |
- | asset | [Asset](#asset) |  |
- | quantity | str |  |
- | value | float |  |
- | chain | ChainId |  |
- | type | str |  |
- | protocol | TransactionProtocol | yes |
- | name | str |  |
- | parent_id | str | yes |
- | included_in_chart | bool |  |
- | is_displayable | bool |  |
- | apy | float | yes |
-
-
-
-
 ## PositionDetail
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -759,30 +417,18 @@
  | amount | int |  |
  | tokens_owed | int |  |
  | fee_growth | int |  |
-
-
-
-
 ## Price
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | value | float |  |
  | relative_change_24h | float | yes |
  | changed_at | int |  |
-
-
-
-
 ## PriceStat
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | min | float |  |
  | max | float |  |
  | relative_change | float |  |
-
-
-
-
 ## StakedAsset
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -793,10 +439,6 @@
  | section | str |  |
  | protocol | str |  |
  | displayed_on_chart | bool |  |
-
-
-
-
 ## Tokenlist
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -805,10 +447,6 @@
  | icon_url | str |  |
  | total_tokens | int |  |
  | has_asset_code | bool |  |
-
-
-
-
 ## Transaction
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -827,10 +465,6 @@
  | changes | [TransactionChange](#transactionchange) | yes |
  | fee | [TransactionFee](#transactionfee) | yes |
  | meta | str | yes |
-
-
-
-
 ## TransactionChange
 | Name | Type | Optional |
 | ---  | ---  | -------- |
@@ -840,12 +474,8 @@
  | address_from | str |  |
  | address_to | str |  |
  | price | float | yes |
-
-
 ## TransactionFee
 | Name | Type | Optional |
 | ---  | ---  | -------- |
  | value | int |  |
  | price | float |  |
-
-

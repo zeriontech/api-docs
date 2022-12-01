@@ -468,6 +468,9 @@ Default: -
 {% api-method-parameter name="contract_addresses" type="list" %}
 Default: []
 {% endapi-method-parameter %}
+{% api-method-parameter name="collection_slugs" type="list" %}
+Default: []
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 {% api-method-response %}
@@ -799,6 +802,212 @@ Successful result.
         },
         "payload": {
             "positions": AddressPositions
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
+{% api-method-summary %} activity {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["activity"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="address" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="addresses" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received address activity",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "activity": AddressActivity]
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
+{% api-method-summary %} actions {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["actions"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="address" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="addresses" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="currency" type="enum" %}
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
+Default: usd
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_limit" type="int" %}
+Default: 50
+{% endapi-method-parameter %}
+{% api-method-parameter name="cursor" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_search_query" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_action_types" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_asset_types" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_chains" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="actions_fungible_ids" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received address actions",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "actions": list[action.Action]
+        }
+    }
+]
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="WS" host="wss://api-v4.zerion.io/" path="address" %}
+{% api-method-summary %} external-transactions {% endapi-method-summary %}
+{% api-method-description %}
+Example request
+`[
+    "get",
+    {
+      "scope": ["external-transactions"],
+      "payload": {
+          "body parameter": "value"
+      }
+    }
+]`
+{% endapi-method-description %}
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="address" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="addresses" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="currency" type="enum" %}
+**PriceCurrency**: `eth, btc, usd, eur, krw, rub, gbp, aud, cad, inr, jpy, nzd, try, zar, cny, chf`.
+Default: usd
+{% endapi-method-parameter %}
+{% api-method-parameter name="cursor" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="external_transactions_limit" type="int" %}
+Default: 50
+{% endapi-method-parameter %}
+{% api-method-parameter name="external_transactions_search_query" type="str" %}
+Default: -
+{% endapi-method-parameter %}
+{% api-method-parameter name="external_transactions_types" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="external_transactions_asset_types" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% api-method-parameter name="external_transactions_chains" type="list" %}
+Default: []
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful result.
+{% endapi-method-response-example-description %}
+```
+
+[
+    "received address external-transactions",
+    {
+        "meta": {
+            "status": "ok",
+            "request parameter1": "value1",
+            "request parameter2": "value2"
+        },
+        "payload": {
+            "external-transactions": list[ExternalTransaction]
         }
     }
 ]
