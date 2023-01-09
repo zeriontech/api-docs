@@ -6,7 +6,7 @@ description: Welcome to the DeFi SDK documentation!
 
 **DeFi SDK** is an open-source system of smart contracts that makes it easier for developers to integrate DeFi protocols.
 
-If you have any questions about DeFi SDK, feel free to reach out to us on our [Discord server](https://go.zerion.io/discord).
+If you have any questions about DeFi SDK, feel free to reach out to us on our [Discord server](https://zerion.io/discord).
 
 ![](../.gitbook/assets/twitter_final.png)
 
